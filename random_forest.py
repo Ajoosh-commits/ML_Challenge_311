@@ -21,7 +21,8 @@ def evaluate_random_forest(data_path, n_trees=10, depth=10):
     rf_model = RandomForestClassifier(
         n_estimators=n_trees,
         max_depth=depth,
-        random_state=42
+        random_state=42,
+        max_features=10,
     )
 
     # Train the model
