@@ -22,7 +22,11 @@ def evaluate_random_forest(data_path, n_trees=10, depth=10):
         n_estimators=n_trees,
         max_depth=depth,
         random_state=42,
-        max_features=10,
+        max_features=10
+
+
+
+        ,
     )
 
     # Train the model
